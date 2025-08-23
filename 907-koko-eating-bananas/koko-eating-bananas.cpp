@@ -10,8 +10,8 @@ public:
     }
 
     long long minEatingSpeed(vector<int>& piles, int h) {
-        // long long m,l=max(1LL,accumulate(piles.begin(), piles.end(), 0LL)/h),r=*max_element(piles.begin(), piles.end());
-        long long m,l=1,r=*max_element(piles.begin(), piles.end());
+        long long m,l=max(1LL,accumulate(piles.begin(), piles.end(), 0LL)/h),r=*max_element(piles.begin(), piles.end());
+        // long long m,l=1,r=*max_element(piles.begin(), piles.end());
         while(l<r)
         {
             m=l+(r-l)/2;
